@@ -1,0 +1,25 @@
+.navigation{
+    /*Swapi Indexor title stylesheet*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vh;
+
+    p{
+        padding-left: $padding;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        padding-right: $padding;
+        padding-left: $padding;
+        height: 100%;
+        border-left: 1px solid $color-2 ;
+        -webkit-transition: background 0.2s;
+    }
+
+    a:hover{
+        background-color: $color-2;
+    }
+}
