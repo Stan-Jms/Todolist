@@ -1,14 +1,15 @@
 import React from "react";
 import Home from "./pages/Home";
-import {BrowserRouter as Router,Route,Switch,Link} from "react-router-dom";
+import {BrowserRouter,Route,Routes as Switch} from "react-router-dom";
 
 function App() {
+
   return (
-    <Router>
+    <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Home}/>
+        <Route path="/" element={<Home/>}/>
       </Switch>
-    </Router>
+    </BrowserRouter>
   );
 }
 
