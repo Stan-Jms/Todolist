@@ -5,7 +5,7 @@ const Navbar = () =>{
     return(
         <>
             <div className="navigation">
-                <p>Swapi Indexor</p>
+                <p>Todolist</p>
                 <Link to="/">Home</Link>
 
             </div>
