@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Navbar"
 
-const Home = () =>{
+const Gradcolor = () =>{
 
     return (
         <>
@@ -10,4 +10,4 @@ const Home = () =>{
     )
 }
 
-export default Home;
+export default Gradcolor;

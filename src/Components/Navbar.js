@@ -5,8 +5,10 @@ const Navbar = () =>{
     return(
         <>
             <div className="navigation">
-                <p>Todolist</p>
+                <p>Exercice React</p>
                 <Link to="/">Home</Link>
+                <Link to="/Todolist">Todolist</Link>
+                <Link to="/GradColor">GradColor</Link>
 
             </div>
         </>
