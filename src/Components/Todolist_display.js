@@ -5,11 +5,16 @@ const Todolist_display = (res) =>{
     let payload = res.value;
     
     return(
-        payload.map(x => {
+        payload.map((x,index) => {
                 return(
-                    <p>{x.text}</p>
-                )
-            ;
+                    <>
+                        <div key={index}>
+                            <p>{x.text}</p>
+                            <button>Delete</button>
+                            <button>Done</button>
+                        </div>
+                    </> 
+                );
         })
     )
 }
