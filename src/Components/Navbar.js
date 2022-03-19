@@ -6,9 +6,9 @@ const Navbar = () =>{
         <>
             <div className="navigation">
                 <p>Exercice React</p>
-                <Link to="/">Home</Link>
                 <Link to="/Todolist">Todolist</Link>
                 <Link to="/GradColor">GradColor</Link>
+                <Link to="/">Home</Link>
 
             </div>
         </>

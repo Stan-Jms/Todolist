@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./pages/Home";
-import Todolist from "./Components/Todolist_form";
+import Todolist from "./pages/Todolist";
 import GradColor from "./pages/Gradcolor";
 import {BrowserRouter,Route,Routes as Switch} from "react-router-dom";
 

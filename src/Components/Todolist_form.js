@@ -1,6 +1,6 @@
 import React,{useState,useRef} from "react";
 
-const Todolist = () => {
+const Todolist = (props) => {
 
     const [todo,setTodo] = useState("");
     const clear = useRef(null);
@@ -10,13 +10,15 @@ const Todolist = () => {
     }
     const Submit = (res) =>{
         res.preventDefault();
-        // res.onSubmit({
-        //     id: 1,
-        //     value: todo
-        // });
+        props.onSubmit(
+            {
+                text: todo
+            }
+        )
         clear.current.value = "";
         setTodo("");
     }
+
 
 
     return(
@@ -27,7 +29,7 @@ const Todolist = () => {
                         type="text"
                         name="input" 
                         placeholder="input here" 
-                        onChange= {Change} /*Function call for each input */
+                        onChange= {Change}
                         ref={clear}
                     /> 
                     <button type="submit">Submit</button>
